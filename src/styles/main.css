@@ -1,0 +1,20 @@
+body {
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 8vw;
+}
+
+.spacer {
+  height: 300vh;
+}
