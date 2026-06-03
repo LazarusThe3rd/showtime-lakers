@@ -18,3 +18,15 @@ body {
 .spacer {
   height: 300vh;
 }
+
+.reveal-section {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal-section h2 {
+  font-size: 5vw;
+}
