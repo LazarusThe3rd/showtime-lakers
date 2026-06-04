@@ -26,12 +26,11 @@
   background: #000;
 
   z-index: 20;
-  display: none;
 }
 
 .hero-content {
   position: relative;
-  z-index: 10;
+  z-index: 30;
 
   height: 100%;
 
@@ -46,43 +45,45 @@
 
 .hero-logos {
   display: flex;
-  gap: 2rem;
-
-  margin-bottom: 2rem;
+  gap: 1rem;
 }
 
 .hero-left {
-  width: 80px;
+  width: 100px;
   height: auto;
 
   object-fit: contain;
 }
 
 .hero-right {
-  width: 280px;
+  width: 100px;
   height: auto;
 
   object-fit: contain;
 }
 
 .hero-title {
-  font-size: clamp(4rem, 9vw, 10rem);
-  letter-spacing: 0.15em;
-  font-weight: 300;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(4rem, 7vw, 7rem);
+  letter-spacing: 0.9rem;
+  font-weight: 800;
 }
 
 .hero-subtitle {
-  margin-top: 1rem;
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: clamp(1rem, 4vw, 4rem);
+  font-weight: 400;
+}
+
+.nike-logo {
+  width: 180px;
+  height: auto;
 }
 
 .hero-btn {
-  margin-top: 4rem;
-
-  padding: 1rem 4rem;
-
+  margin-top: 6rem;
+  padding: 1rem 3rem;
   background: transparent;
-
   color: white;
 
   border: 1px solid white;
