@@ -9,15 +9,45 @@
 
 <body>
 
-  <section class="hero">
-    <h1>SHOWTIME</h1>
-  </section>
+  <main>
 
-  <section class="spacer"></section>
+    <section class="hero" aria-labelledby="hero-title">
 
-  <section class="reveal-section">
-    <h2>Welcome to Showtime</h2>
-  </section>
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="/src/assets/videos/crypto-arena.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="intro-screen"></div>
+
+      <header class="hero-content">
+
+        <div class="hero-logos">
+
+          <img src="/src/assets/logos/nba_logo.png" alt="NBA Logo" class="hero-left logo-left">
+
+          <img src="/src/assets/logos/lakers_logo.png" alt="Lakers Logo" class="hero-right logo-right">
+
+        </div>
+
+        <h1 id="hero-title" class="hero-title">
+          Los Angelos Lakers
+        </h1>
+
+        <p class="hero-subtitle">
+          Purple. Gold. Greatness.
+        </p>
+
+        <a href="#legacy" class="hero-btn">
+          Explore Dynasty
+        </a>
+
+      </header>
+
+    </section>
+
+  </main>
 
 
   <script type="module" src="/src/main.js"></script>
