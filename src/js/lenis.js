@@ -2,6 +2,8 @@ import Lenis from "lenis";
 
 const lenis = new Lenis();
 
+lenis.stop();
+
 function raf(time) {
   //raf = Request Animation Frame
   lenis.raf(time);
