@@ -1,13 +1,14 @@
 import Lenis from "lenis";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const lenis = new Lenis();
 
-lenis.stop();
+lenis.on("scroll", ScrollTrigger.update);
 
 function raf(time) {
-  //raf = Request Animation Frame
   lenis.raf(time);
   requestAnimationFrame(raf);
+  //raf = Request Animation Frame
 }
 
 requestAnimationFrame(raf);
