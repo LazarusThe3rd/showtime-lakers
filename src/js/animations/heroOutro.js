@@ -1,9 +1,7 @@
 import { gsap } from "../gsap";
-import lenis from "../lenis";
 
 export function heroOutro() {
   const button = document.querySelector(".hero-btn");
-  const intro = document.querySelector("#intro");
 
   button.addEventListener("click", (e) => {
     e.preventDefault();
@@ -49,33 +47,58 @@ export function heroOutro() {
     );
 
     tl.to(
-      ".hero-logo",
+      ".logo-right",
       {
         opacity: 0,
         y: -100,
         duration: 0.5,
       },
       "-=0.3",
-    )
+    );
 
-      .to(".hero-content", {
+    tl.to(
+      ".logo-left",
+      {
         opacity: 0,
-        duration: 1.2,
+        y: 100,
+        duration: 0.5,
+      },
+      "-=0.3",
+    );
+
+    tl.to(".hero-content", {
+      opacity: 0,
+      duration: 1.2,
+      ease: "power3.inOut",
+    });
+    tl.call(() => {
+      console.log("TRANSITION START");
+    });
+
+    tl.to(
+      ".transition-row.row-1 .block",
+      {
+        scaleY: 1,
+        duration: 0.8,
+        stagger: 0.08,
         ease: "power3.inOut",
-      })
+      },
+      "-=0.5",
+    );
 
-      .set(".intro", {
-        visibility: "visible",
-      })
+    tl.to(
+      ".transition-row.row-2 .block",
+      {
+        scaleY: 1,
+        duration: 0.8,
+        stagger: 0.08,
+        ease: "power3.inOut",
+      },
+      "<",
+    );
 
-      .to(
-        ".intro",
-        {
-          opacity: 1,
-          duration: 1.2,
-          ease: "power2.inOut",
-        },
-        "<",
-      );
+    tl.call(() => {
+      window.location.href = "/experience.html";
+    });
   });
 }

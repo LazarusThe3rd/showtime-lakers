@@ -1,11 +1,10 @@
 .intro {
-  position: fixed;
-  inset: 0;
+  position: relative;
 
-  opacity: 0;
-  visibility: hidden;
+  min-height: 100vh;
 
-  z-index: 50;
+  opacity: 1;
+  visibility: visible;
 }
 
 .intro-video {
