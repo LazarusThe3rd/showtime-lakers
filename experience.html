@@ -30,36 +30,61 @@
 
     </div>
 
+    <nav class="experience-nav" aria-label="Hoofdnavigatie">
+        <img src="/src/assets/logos/lakers_logo.png" alt="Los Angeles Lakers" class="nav-logo nav-logo-left" />
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu">
+            <span></span>
+        </button>
+
+        <img src="/src/assets/logos/nba_logo.png" alt="NBA" class="nav-logo nav-logo-right" />
+    </nav>
+
+    <div class="menu-curtain" id="main-menu" aria-hidden="true">
+        <div class="menu-content">
+            <ul role="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Genesis</a></li>
+                <li><a href="#">Dynasty</a></li>
+                <li><a href="#">Mamba</a></li>
+                <li><a href="#">Legacy</a></li>
+            </ul>
+        </div>
+    </div>
+
 
     <main>
         <section id="intro" class="intro">
-            <video class="intro-video">
-                <source src="/src/assets/videos/mamba.mp4" type="video/mp4">
-            </video>
-            <div class="intro-overlay" aria-hidden="true"></div>
-            <div class="intro-content">
-                <p class="intro-text">
-                    The identity of Los Angeles made us more than a team.
+            <div class="intro-sticky">
+                <video id="mamba-video" class="intro-video" muted playsinline preload="auto">
+                    <source src="/src/assets/videos/los-angeles.mp4" type="video/mp4">
+                </video>
+                <div class="intro-overlay" aria-hidden="true"></div>
+                <div class="intro-content">
+                    <p class="intro-text">
+                        The identity of Los Angeles made us more than a team.
 
-                    A city driven by dreams and centered by hard work.
-                    People in pursuit of greatness.
-                    A place that loves a good show.
+                        A city driven by dreams and centered by hard work.
+                        People in pursuit of greatness.
+                        A place that loves a good show.
 
-                    The Lakers came to town and made the movie magic real.
-                    We grew into something the world could feel and carry with them.
-                    Without Los Angeles,We wouldn’t be who we are in purple.
+                        The Lakers came to town and made the movie magic real.
+                        We grew into something the world could feel and carry with them.
+                        Without Los Angeles,We wouldn’t be who we are in purple.
 
-                    And without the Lakers,This city wouldn’t shine the same in gold.
+                        And without the Lakers,This city wouldn’t shine the same in gold.
 
-                    Each of us standing on our own,
-                    Shaped by each other.
-                    Defined forever.
+                        Each of us standing on our own,
+                        Shaped by each other.
+                        Defined forever.
 
-                    The Lakers will spend forever thanking this city.
-                    Playing for this community.
-                    Bringing every corner of this place together.
-                    And giving greatness to LA.
-                </p>
+                        The Lakers will spend forever thanking this city.
+                        Playing for this community.
+                        Bringing every corner of this place together.
+                        And giving greatness to LA.
+                    </p>
+                </div>
+
             </div>
         </section>
     </main>
